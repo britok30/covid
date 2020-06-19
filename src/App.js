@@ -1,18 +1,12 @@
 import React, { Component } from "react";
-import axios from "axios";
 import Hero from "./components/Hero/Hero";
+import CovidData from "./components/Data/CovidData";
 import "./App.css";
 
 class App extends Component {
     state = {
-      data: {}
+        covidData: {},
     };
-
-    componentDidMount() {
-        //Sffgfgsg
-    }
-
-    axios.get('https://api.covid19api.com/')
 
     render() {
         return (
@@ -23,13 +17,10 @@ class App extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-lg-4 col-sm-4">
-                            <h1>HI</h1>
+                            <CovidData />
                         </div>
                         <div className="col-md-4 col-lg-4 col-sm-4">
-                            <h1>HI</h1>
-                        </div>
-                        <div className="col-md-4 col-lg-4 col-sm-4">
-                            <h1>HI</h1>
+                            {/* Table */}
                         </div>
                     </div>
                 </div>

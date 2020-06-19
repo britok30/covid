@@ -53,3 +53,11 @@
 }
 
 /* Card Data Section  */
+
+.card {
+    margin-top: 5rem;
+    width: 40rem;
+    background: #000 !important;
+    color: #fff !important;
+    border-radius: 5rem;
+}
