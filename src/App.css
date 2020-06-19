@@ -3,8 +3,8 @@
 .hero {
     background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.541),
-            rgba(0, 0, 0, 0.548)
+            rgba(0, 0, 0, 0.712),
+            rgba(0, 0, 0, 0.753)
         ),
         url(./img/hero.jpg) center center/cover no-repeat;
     height: 100vh;
@@ -29,3 +29,27 @@
     font-size: 2rem;
     width: 75%;
 }
+
+.hero-p-2 {
+    font-size: 1rem;
+    width: 75%;
+}
+
+.hero-source {
+    text-decoration: none;
+    color: red;
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+
+.hero-source:hover {
+    text-decoration: none;
+    color: red;
+    opacity: 0.5;
+}
+
+.moment {
+    font-size: 1.5rem;
+}
+
+/* Card Data Section  */
