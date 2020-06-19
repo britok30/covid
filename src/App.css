@@ -59,7 +59,7 @@
     width: 40rem;
     background: #000 !important;
     color: #fff !important;
-    border-radius: 5rem;
+    border-radius: 2rem !important;
 }
 
 .card-title {
@@ -73,25 +73,37 @@
 }
 
 .new-confirmed {
-  color: #00a1ab
+    color: #00a1ab;
 }
 
 .total-confirmed {
-  color: #ff5200
+    color: #ff5200;
 }
 
 .new-deaths {
-  color: #e43f5a;
+    color: #e43f5a;
 }
 
 .total-deaths {
-  color: #16817a;
+    color: #16817a;
 }
 
 .new-recovered {
-  color: #ffe2bc
+    color: #ffe2bc;
 }
 
 .total-recovered {
-  color: #af8baf
+    color: #af8baf;
+}
+
+/* Navbar  */
+
+.navbar-brand {
+    font-size: 2rem !important;
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 1.2rem !important;
+    color: #fff;
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import moment from "moment";
 import "../../App.css";
+import Navbar from "../Navbar/Navbar";
 
 function Hero() {
     return (
         <div>
+            <Navbar />
             <header className="hero-text">
                 <div className="moment">{moment().format("MMMM Do, YYYY")}</div>
                 <h1 className="hero-lead">Corona</h1>
