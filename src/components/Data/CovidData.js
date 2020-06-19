@@ -4,7 +4,7 @@ import CovidGlobalCard from "./CovidGlobalCard";
 
 class CovidData extends Component {
     state = {
-        data: [],
+        data: {},
     };
 
     componentDidMount = () => {
