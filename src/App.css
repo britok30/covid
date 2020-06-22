@@ -1,6 +1,7 @@
 .covid-heading {
     font-size: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 /* Hero Section  */
@@ -64,7 +65,6 @@
 /* Card Data Section  */
 
 .card {
-    width: 40rem;
     background: #0e0e0e !important;
     color: #fff !important;
     border-radius: 2rem !important;
@@ -136,4 +136,31 @@
 .covidtable {
     margin-top: 5rem;
     border-radius: 1rem;
+}
+
+/* Search Local */
+.localinput {
+    font-size: 2rem;
+    background: #0e0e0e !important;
+    color: #fff !important;
+    border-radius: 1rem !important;
+    padding: 2rem !important;
+    display: block;
+}
+
+.form-inline button.form-control,
+#contain_word {
+    display: block;
+    width: 100%;
+}
+
+.search-label,
+::placeholder {
+    font-size: 2rem;
+}
+
+.submit-btn {
+    margin-top: 2rem;
+    font-size: 1.3rem !important;
+    display: block;
 }
