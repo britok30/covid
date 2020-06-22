@@ -18,35 +18,43 @@ const CovidGlobalCard = (props) => {
                     <h4 className="card-subtitle mb-2 text-muted">
                         New Confirmed
                     </h4>
-                    <p className="card-text new-confirmed">{newConfirmed}</p>
+                    <p className="card-text new-confirmed">
+                        {Number(newConfirmed).toLocaleString()}
+                    </p>
 
                     <h4 className="card-subtitle mb-2 text-muted">
                         Total Confirmed
                     </h4>
                     <p className="card-text total-confirmed">
-                        {totalConfirmed}
+                        {Number(totalConfirmed).toLocaleString()}
                     </p>
 
                     <h4 className="card-subtitle mb-2 text-muted">
                         New Deaths
                     </h4>
-                    <p className="card-text new-deaths">{newDeaths}</p>
+                    <p className="card-text new-deaths">
+                        {Number(newDeaths).toLocaleString()}
+                    </p>
 
                     <h4 className="card-subtitle mb-2 text-muted">
                         Total Deaths
                     </h4>
-                    <p className="card-text total-deaths">{totalDeaths}</p>
+                    <p className="card-text total-deaths">
+                        {Number(totalDeaths).toLocaleString()}
+                    </p>
 
                     <h4 className="card-subtitle mb-2 text-muted">
                         New Recovered
                     </h4>
-                    <p className="card-text new-recovered">{newRecovered}</p>
+                    <p className="card-text new-recovered">
+                        {Number(newRecovered).toLocaleString()}
+                    </p>
 
                     <h4 className="card-subtitle mb-2 text-muted">
                         Total Recovered
                     </h4>
                     <p className="card-text total-recovered">
-                        {totalRecovered}
+                        {Number(totalRecovered).toLocaleString()}
                     </p>
                 </div>
             </div>

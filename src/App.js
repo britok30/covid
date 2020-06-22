@@ -21,13 +21,15 @@ class App extends Component {
                         <div className="col-md-4 col-lg-4 col-sm-4">
                             <CovidData />
                         </div>
+
                         <div className="col-md-8 card-columns">
                             <h2 className="covid-heading">Top Covid News</h2>
+
                             <CovidNews />
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-8 col-lg-8 col-sm-8 table">
+                        <div className="col-md-12 col-lg-12 col-sm-12 table">
                             <CovidCountryData />
                         </div>
                     </div>
