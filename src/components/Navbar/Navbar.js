@@ -23,7 +23,7 @@ function Navbar() {
                     className="collapse navbar-collapse"
                     id="navbarNav"
                 >
-                    <ul className="navbar-nav ml-auto">
+                    {/* <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
                             <a className="nav-link" href="#">
                                 Home <span className="sr-only">(current)</span>
@@ -39,7 +39,7 @@ function Navbar() {
                                 Pricing
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
             </nav>
         </div>
