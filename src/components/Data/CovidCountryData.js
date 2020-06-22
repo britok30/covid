@@ -18,14 +18,23 @@ class CovidCountryData extends Component {
         });
     };
 
+    getKeys = () => {
+        return console.log(Object.keys(this.state.data[0]));
+    };
+
+    getHeader = () => {
+        var keys = this.getKeys();
+        return keys.map((key, index) => {
+            return <th key={key}>{key.toUpperCase()}</th>;
+        });
+    };
+
     render() {
         const { data } = this.state;
 
         return (
             <div>
-                {data.map((country) => {
-                    return <CovidTable />;
-                })}
+                <CovidTable header={this.getHeader} />
             </div>
         );
     }

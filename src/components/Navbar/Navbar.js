@@ -6,7 +6,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg">
                 <a className="navbar-brand" href="#">
-                    CoronaTracker.js
+                    Covid.js
                 </a>
                 <button
                     className="navbar-toggler"

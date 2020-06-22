@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Hero from "./components/Hero/Hero";
 import CovidData from "./components/Data/CovidData";
 import CovidCountryData from "./components/Data/CovidCountryData";
+import CovidNews from "./components/News/CovidNews";
 import "./App.css";
 
 class App extends Component {
@@ -15,12 +16,18 @@ class App extends Component {
                 <div className="hero">
                     <Hero />
                 </div>
-                <div className="container">
-                    <div className="row">
+                <div className="container-fluid">
+                    <div className="row space">
                         <div className="col-md-4 col-lg-4 col-sm-4">
                             <CovidData />
                         </div>
-                        <div className="col-md-4 col-lg-4 col-sm-4">
+                        <div className="col-md-8 card-columns">
+                            <h2 className="covid-heading">Top Covid News</h2>
+                            <CovidNews />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-8 col-lg-8 col-sm-8 table">
                             <CovidCountryData />
                         </div>
                     </div>

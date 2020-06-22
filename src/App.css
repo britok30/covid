@@ -1,3 +1,8 @@
+.covid-heading {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
 /* Hero Section  */
 
 .hero {
@@ -52,10 +57,13 @@
     font-size: 1.5rem;
 }
 
+.space {
+    margin: 3rem 0 3rem 0;
+}
+
 /* Card Data Section  */
 
 .card {
-    margin-top: 5rem;
     width: 40rem;
     background: #0e0e0e !important;
     color: #fff !important;
@@ -96,6 +104,22 @@
     color: #af8baf;
 }
 
+/* News Card */
+
+.news-title {
+    font-size: 2rem;
+    color: rgb(156, 12, 12);
+}
+
+.news-subtitle {
+    font-size: 2rem;
+}
+
+.news-text,
+.news-link {
+    font-size: 1.5rem;
+}
+
 /* Navbar  */
 
 .navbar-brand {
@@ -106,4 +130,10 @@
 .nav-link {
     font-size: 1.2rem !important;
     color: #fff;
+}
+
+/* Table */
+.covidtable {
+    margin-top: 5rem;
+    border-radius: 1rem;
 }
