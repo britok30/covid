@@ -80,23 +80,28 @@
     font-size: 4rem;
 }
 
-.new-confirmed {
+.new-confirmed,
+.state-case {
     color: #00a1ab;
 }
 
-.total-confirmed {
+.total-confirmed,
+.county-case {
     color: #ff5200;
 }
 
-.new-deaths {
+.new-deaths,
+.state-death {
     color: #e43f5a;
 }
 
-.total-deaths {
+.total-deaths,
+.county-death {
     color: #16817a;
 }
 
-.new-recovered {
+.new-recovered,
+.affected-counties {
     color: #ffe2bc;
 }
 
@@ -108,10 +113,10 @@
 
 .city-card {
     margin: 3rem auto;
+    width: 30rem;
 }
 
-.news-title,
-.city-title {
+.news-title {
     font-size: 2.5rem;
     color: rgb(156, 12, 12);
 }
@@ -122,9 +127,17 @@
 }
 
 .news-text,
-.news-link,
-.city-text {
+.news-link {
     font-size: 1.5rem;
+}
+
+.city-title {
+    font-size: 4rem;
+    color: rgb(156, 12, 12);
+}
+
+.city-text {
+  font-size: 2.5rem;
 }
 
 /* Navbar  */

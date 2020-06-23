@@ -20,21 +20,33 @@ export default function AddressCard(props) {
                         {city ? city : county}
                     </h5>
                     <p className="card-text city-text">State: {state}</p>
-                    <p className="card-text city-text">
-                        County Cases: {countyCase ? countyCase : null}
+                    <p className="card-text city-text county-case">
+                        County Cases:{" "}
+                        {countyCase
+                            ? Number(countyCase).toLocaleString()
+                            : null}
                     </p>
-                    <p className="card-text city-text">
-                        County Deaths: {countyDeath ? countyDeath : null}
+                    <p className="card-text city-text county-death">
+                        County Deaths:{" "}
+                        {countyDeath
+                            ? Number(countyDeath).toLocaleString()
+                            : null}
                     </p>
-                    <p className="card-text city-text">
-                        State Cases: {stateCase ? stateCase : null}
+                    <p className="card-text city-text state-case">
+                        State Cases:{" "}
+                        {stateCase ? Number(stateCase).toLocaleString() : null}
                     </p>
-                    <p className="card-text city-text">
-                        State Deaths: {stateDeath ? stateDeath : null}
+                    <p className="card-text city-text state-death">
+                        State Deaths:{" "}
+                        {stateDeath
+                            ? Number(stateDeath).toLocaleString()
+                            : null}
                     </p>
-                    <p className="card-text city-text">
+                    <p className="card-text city-text affected-counties">
                         Affected Counties:{" "}
-                        {stateAffectedCounties ? stateAffectedCounties : null}
+                        {stateAffectedCounties
+                            ? Number(stateAffectedCounties).toLocaleString()
+                            : null}
                     </p>
                 </div>
             </div>
