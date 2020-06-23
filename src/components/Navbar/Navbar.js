@@ -20,7 +20,7 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    {/* <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
                             <a className="nav-link" href="#">
                                 Home <span className="sr-only">(current)</span>
@@ -28,15 +28,20 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
-                                Features
+                                Sources
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                Pricing
+                            <a
+                                className="nav-link"
+                                href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                What To Do
                             </a>
                         </li>
-                    </ul> */}
+                    </ul>
                 </div>
             </nav>
         </div>

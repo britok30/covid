@@ -155,12 +155,22 @@
 /* Navbar  */
 
 .navbar-brand {
-    font-size: 2rem !important;
+    font-size: 4rem !important;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
     color: #fff;
 }
 
 .nav-link {
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
     color: #fff;
 }
 
