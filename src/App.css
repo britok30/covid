@@ -104,19 +104,26 @@
     color: #af8baf;
 }
 
-/* News Card */
+/* News && Address Card */
 
-.news-title {
-    font-size: 2rem;
+.city-card {
+    margin: 3rem auto;
+}
+
+.news-title,
+.city-title {
+    font-size: 2.5rem;
     color: rgb(156, 12, 12);
 }
 
-.news-subtitle {
+.news-subtitle,
+.city-subtitle {
     font-size: 2rem;
 }
 
 .news-text,
-.news-link {
+.news-link,
+.city-text {
     font-size: 1.5rem;
 }
 
@@ -140,7 +147,7 @@
 
 /* Search Local */
 .localinput {
-    font-size: 2rem;
+    font-size: 2.5rem !important;
     background: #0e0e0e !important;
     color: #fff !important;
     border-radius: 1rem !important;
