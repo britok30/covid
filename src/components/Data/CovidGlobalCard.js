@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import moment from "moment";
 
 const CovidGlobalCard = (props) => {
     const {
@@ -15,6 +16,9 @@ const CovidGlobalCard = (props) => {
             <div className="card">
                 <div className="card-body">
                     <h1 className="card-title">Quick Stats</h1>
+                    <p className="card-text moment today">
+                        As of: {moment().format("MMMM Do, YYYY")}
+                    </p>
                     <h4 className="card-subtitle mb-2 text-muted">
                         New Confirmed
                     </h4>
