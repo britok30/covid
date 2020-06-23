@@ -19,10 +19,25 @@ function Hero() {
                 </p>
                 <p className="hero-p-2">
                     Data gathered from{" "}
-                    <a href="https://covid19api.com/" className="hero-source">
+                    <a
+                        href="https://covid19api.com/"
+                        className="hero-source"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         COVID API
+                    </a>{" "}
+                    &{" "}
+                    <a
+                        href="https://covidnow.docs.apiary.io/#/introduction/sources"
+                        className="hero-source"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        CovidNow
                     </a>
-                    , which is sourced from John Hopkins CSSE.
+                    , which is sourced from John Hopkins CSSE & multiple other
+                    sources.
                 </p>
             </header>
         </div>
