@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Hero from "./components/Hero/Hero";
 import CovidData from "./components/Data/CovidData";
-import CovidCountryData from "./components/Data/CovidCountryData";
+import CovidTable from "./components/Data/CovidTable";
 import CovidNews from "./components/News/CovidNews";
 import SearchLocal from "./components/LocalFinder/SearchLocal";
-import CovidImg "./components"
+// import CovidImg "./components"
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 import axios from "axios";
@@ -69,7 +69,7 @@ class App extends Component {
                     <div className="row space">
                         <div className="col-md-4 col-lg-4 col-sm-4">
                             <CovidData />
-                            <CovidImg />
+                            {/* <CovidImg /> */}
                         </div>
                         <div className="col-md-8 col-lg-8 col-sm-8">
                             <div className="chartjs">
@@ -104,23 +104,22 @@ class App extends Component {
                                     }}
                                 />
                             </div>
-
-                            <div className="twitter">
-                                <TwitterTimelineEmbed
-                                    sourceType="profile"
-                                    screenName="who"
-                                    theme="dark"
-                                    options={{ height: 600 }}
-                                />
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-12 card-columns">
+                        <div className="col-md-8 col-md-8 col-sm-8 card-columns">
                             <h2 className="covid-heading">Top Covid News</h2>
                             <CovidNews />
+                        </div>
+                        <div className="twitter col-md-4 col-lg-4 col-sm-4">
+                            <TwitterTimelineEmbed
+                                sourceType="profile"
+                                screenName="who"
+                                theme="dark"
+                                options={{ height: 600 }}
+                            />
                         </div>
                     </div>
                 </div>
@@ -130,7 +129,7 @@ class App extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12">
-                            <CovidCountryData />
+                            <CovidTable />
                         </div>
                     </div>
                 </div>

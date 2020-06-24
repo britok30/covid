@@ -14,11 +14,12 @@
         ),
         url(./img/hero.jpg) center center/cover no-repeat;
     height: 100vh;
+    position: relative;
 }
 
 .hero-text {
     position: absolute;
-    left: 50%;
+    left: 56%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -178,6 +179,8 @@
 .covidtable {
     margin-top: 5rem;
     border-radius: 1rem;
+    background: #0e0e0e !important;
+    font-size: 1.3rem;
 }
 
 /* Search Local */

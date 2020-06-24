@@ -36,7 +36,7 @@ export default class SearchLocal extends Component {
                         <form
                             className="form"
                             onSubmit={this.handleSubmit}
-                            autocomplete="off"
+                            autoComplete="off"
                         >
                             <input
                                 className="localinput form-control"
