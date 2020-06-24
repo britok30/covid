@@ -14,12 +14,11 @@
         ),
         url(./img/hero.jpg) center center/cover no-repeat;
     height: 100vh;
-    position: relative;
 }
 
 .hero-text {
     position: absolute;
-    left: 56%;
+    left: 55%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -213,4 +212,46 @@
 /* Twitter */
 .twitter {
     margin-top: 4rem;
+}
+
+/* MEDIA QUERIES  */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .hero-lead {
+        font-size: 5rem;
+        padding: 0;
+    }
+
+    .hero-sublead {
+        font-size: 2rem;
+    }
+
+    .hero-p {
+        font-size: 1rem;
+    }
+
+    .hero-p,
+    .hero-p-2 {
+        width: 100%;
+    }
+
+    .moment {
+        font-size: 1rem;
+    }
+
+    .chartjs {
+        margin-top: 3rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem !important;
+    }
+
+    .card-title,
+    .covid-heading {
+        font-size: 3rem;
+    }
+
+    .news-title {
+        font-size: 2rem;
+    }
 }
