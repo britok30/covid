@@ -123,6 +123,11 @@
 
 /* News && Address Card */
 
+.covid-img {
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+}
+
 .city-card {
     margin: 3rem auto;
     width: 30rem;
@@ -206,7 +211,9 @@
 .submit-btn {
     margin-top: 2rem;
     font-size: 1.3rem !important;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Twitter */

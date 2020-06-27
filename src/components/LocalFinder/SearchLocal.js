@@ -4,7 +4,7 @@ import AddressCard from "./AddressCard";
 
 export default class SearchLocal extends Component {
     state = {
-        address: "",
+        address: "Miami",
         results: [],
     };
 
