@@ -27,7 +27,7 @@ function Hero() {
                     >
                         COVID API
                     </a>{" "}
-                    &{" "}
+                    ,{" "}
                     <a
                         href="https://covidnow.docs.apiary.io/#/introduction/sources"
                         className="hero-source"
@@ -35,9 +35,16 @@ function Hero() {
                         rel="noopener noreferrer"
                     >
                         CovidNow
+                    </a>{" "}
+                    &{" "}
+                    <a
+                        href="https://covidtracking.com/api"
+                        className="hero-source"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        The Covid Tracking Project
                     </a>
-                    , which is sourced from John Hopkins CSSE & multiple other
-                    sources.
                 </p>
             </header>
         </div>

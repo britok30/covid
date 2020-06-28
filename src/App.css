@@ -9,8 +9,8 @@
 .hero {
     background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.712),
-            rgba(0, 0, 0, 0.753)
+            rgba(0, 0, 0, 0.512),
+            rgba(0, 0, 0, 0.553)
         ),
         url(./img/hero.jpg) center center/cover no-repeat;
     height: 100vh;
@@ -184,7 +184,7 @@
     margin-top: 5rem;
     border-radius: 1rem;
     background: #0e0e0e !important;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* Search Local */
@@ -221,8 +221,15 @@
     margin-top: 4rem;
 }
 
-.datamap {
-    height: 100vh;
+/* Footer */
+.footer {
+    margin: 3rem auto;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
 }
 
 /* MEDIA QUERIES  */

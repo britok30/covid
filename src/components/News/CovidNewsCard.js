@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import pic1 from "../../img/pic1.jpg";
-import pic2 from "../../img/pic2.jpg";
-import pic3 from "../../img/pic3.jpg";
+import pic1 from "../../img/pic1.png";
+import pic2 from "../../img/pic2.png";
+import pic3 from "../../img/pic3.png";
 import pic4 from "../../img/pic4.jpg";
-import pic5 from "../../img/pic5.jpg";
+import pic5 from "../../img/pic5.png";
 import pic6 from "../../img/pic6.jpg";
-import pic7 from "../../img/pic7.jpg";
 
 class CovidNewsCard extends Component {
     state = {
@@ -31,9 +30,6 @@ class CovidNewsCard extends Component {
         {
             link: pic6,
         },
-        {
-            link: pic7,
-        },
     ];
 
     componentWillMount() {
@@ -42,7 +38,7 @@ class CovidNewsCard extends Component {
 
     displayRandomImage = () => {
         this.setState({
-            imgIndex: Math.floor(Math.random() * 7),
+            imgIndex: Math.floor(Math.random() * 6),
         });
     };
 

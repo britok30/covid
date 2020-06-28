@@ -22,7 +22,7 @@ export default class CovidTable extends Component {
 
         return (
             <div>
-                <h2 className="covid-heading">World COVID-19 Stats</h2>
+                <h2 className="covid-heading">World Covid Stats</h2>
                 <div className="moment">
                     As of: {moment().format("MMMM Do, YYYY")}
                 </div>

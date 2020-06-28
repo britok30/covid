@@ -5,10 +5,11 @@ import CovidTable from "./components/Data/CovidTable";
 import CovidNews from "./components/News/CovidNews";
 import SearchLocal from "./components/LocalFinder/SearchLocal";
 import CovidStatesTable from "./components/Data/CovidStatesTable";
+import Footer from "./components/Footer";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 import axios from "axios";
-import { HorizontalBar } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import "./App.css";
 
 class App extends Component {
@@ -69,15 +70,14 @@ class App extends Component {
                     <div className="row space">
                         <div className="col-md-4 col-lg-4 col-sm-4">
                             <CovidData />
-                            {/* <CovidImg /> */}
                         </div>
                         <div className="col-md-8 col-lg-8 col-sm-8">
                             <div className="chartjs">
-                                <HorizontalBar
+                                <Pie
                                     data={chartData}
                                     id="chart"
                                     width={100}
-                                    height={80}
+                                    height={60}
                                     options={{
                                         title: {
                                             display: true,
@@ -85,22 +85,6 @@ class App extends Component {
                                             fontSize: 24,
                                         },
                                         responsive: true,
-                                        scales: {
-                                            yAxes: [
-                                                {
-                                                    ticks: {
-                                                        fontSize: 15,
-                                                    },
-                                                },
-                                            ],
-                                            xAxes: [
-                                                {
-                                                    ticks: {
-                                                        fontSize: 15,
-                                                    },
-                                                },
-                                            ],
-                                        },
                                     }}
                                 />
                             </div>
@@ -140,6 +124,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

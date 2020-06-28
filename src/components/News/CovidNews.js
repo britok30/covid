@@ -27,7 +27,7 @@ export default class CovidNews extends Component {
         return (
             <div>
                 {Object.keys(news)
-                    .slice(0, 12)
+                    .slice(0, 9)
                     .map((keyName, i) => {
                         return (
                             <CovidNewsCard

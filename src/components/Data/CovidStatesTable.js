@@ -24,16 +24,22 @@ class CovidStatesTable extends Component {
         const { data } = this.state;
         return (
             <div>
-                <h2 className="covid-heading">U.S.Covid Stats</h2>
-                <div className="moment">As of: {moment().format("MMMM Do, YYYY")}</div>
+                <h2 className="covid-heading">U.S. Covid Stats</h2>
+                <div className="moment">
+                    As of: {moment().format("MMMM Do, YYYY")}
+                </div>
                 <div className="table-responsive">
                     <table className="table table-borderless table-dark table-hover covidtable ">
                         <thead>
                             <tr>
                                 <th scope="col">State</th>
-                                <th scope="col">Positive</th>
-                                <th scope="col">Negative</th>
-                                <th scope="col">Death</th>
+                                <th scope="col">
+                                    Positive (Positive Increase)
+                                </th>
+                                <th scope="col">
+                                    Negative (Negative Increase)
+                                </th>
+                                <th scope="col">Death (Death Increase)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,16 +51,31 @@ class CovidStatesTable extends Component {
                                             {Number(
                                                 state.positive
                                             ).toLocaleString()}
+                                            {"  "}({"+"}
+                                            {Number(
+                                                state.positiveIncrease
+                                            ).toLocaleString()}
+                                            )
                                         </td>
                                         <td className="total-confirmed">
                                             {Number(
                                                 state.negative
                                             ).toLocaleString()}
+                                            {"  "}({"+"}
+                                            {Number(
+                                                state.negativeIncrease
+                                            ).toLocaleString()}
+                                            )
                                         </td>
                                         <td className="new-deaths">
                                             {Number(
                                                 state.death
                                             ).toLocaleString()}
+                                            {"  "}({"+"}
+                                            {Number(
+                                                state.deathIncrease
+                                            ).toLocaleString()}
+                                            )
                                         </td>
                                     </tr>
                                 );
