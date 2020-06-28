@@ -4,7 +4,7 @@ import CovidData from "./components/Data/CovidData";
 import CovidTable from "./components/Data/CovidTable";
 import CovidNews from "./components/News/CovidNews";
 import SearchLocal from "./components/LocalFinder/SearchLocal";
-// import CovidImg "./components"
+import CovidStatesTable from "./components/Data/CovidStatesTable";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 import axios from "axios";
@@ -44,12 +44,12 @@ class App extends Component {
                                 res.data.Global.TotalRecovered,
                             ],
                             backgroundColor: [
-                                "rgb(0, 161, 171)",
-                                "rgb(255, 82, 0)",
-                                "rgb(228, 63, 90)",
-                                "rgb(22, 129, 122)",
-                                "rgb(255, 226, 188)",
-                                "rgb(175, 139, 175)",
+                                "rgba(0, 161, 171, 0.5)",
+                                "rgba(255, 82, 0, 0.5)",
+                                "rgba(228, 63, 90, 0.5)",
+                                "rgba(22, 129, 122, 0.5)",
+                                "rgba(255, 226, 188, 0.5)",
+                                "rgba(175, 139, 175, 0.5)",
                             ],
                         },
                     ],
@@ -130,6 +130,13 @@ class App extends Component {
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12">
                             <CovidTable />
+                        </div>
+                    </div>
+                </div>
+                <div className="container-fluid datamap">
+                    <div className="row">
+                        <div className="col-md-12 col-lg-12 col-sm-12">
+                            <CovidStatesTable />
                         </div>
                     </div>
                 </div>

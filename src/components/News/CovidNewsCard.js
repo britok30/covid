@@ -58,13 +58,13 @@ class CovidNewsCard extends Component {
                 />
                 <div className="card-body">
                     <h5 className="card-title news-title">
-                        {title ? title : "N/A"}
+                        {title ? title : "Article N/A"}
                     </h5>
                     <h6 className="card-subtitle news-subtitle mb-2 text-muted">
                         Source: {source ? source : "N/A"}
                     </h6>
                     <a
-                        href={newsLink ? newsLink : "index.html"}
+                        href={newsLink ? newsLink : ""}
                         className="card-link news-link"
                         target="_blank"
                         rel="noopener noreferrer"

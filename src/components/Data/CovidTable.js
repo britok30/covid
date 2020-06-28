@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import moment from "moment";
 
 export default class CovidTable extends Component {
     state = {
@@ -22,6 +23,9 @@ export default class CovidTable extends Component {
         return (
             <div>
                 <h2 className="covid-heading">World COVID-19 Stats</h2>
+                <div className="moment">
+                    As of: {moment().format("MMMM Do, YYYY")}
+                </div>
                 <div className="table-responsive">
                     <table className="table table-borderless table-dark table-hover covidtable ">
                         <thead>

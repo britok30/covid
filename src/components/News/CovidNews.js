@@ -17,7 +17,6 @@ export default class CovidNews extends Component {
                 "https://cors-anywhere.herokuapp.com/https://api.covidnow.com/v1/news/usa"
             )
             .then((res) => {
-                console.log(res.data);
                 this.setState({ news: res.data });
             });
     };
@@ -28,7 +27,7 @@ export default class CovidNews extends Component {
         return (
             <div>
                 {Object.keys(news)
-                    .slice(0, 9)
+                    .slice(0, 12)
                     .map((keyName, i) => {
                         return (
                             <CovidNewsCard
