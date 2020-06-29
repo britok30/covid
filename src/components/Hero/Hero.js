@@ -10,7 +10,7 @@ function Hero() {
             <header className="hero-text">
                 <div className="moment">{moment().format("MMMM Do, YYYY")}</div>
                 <h1 className="hero-lead">Corona</h1>
-                <h2 className="hero-sublead">Viruse Disease (COVID-19)</h2>
+                <h2 className="hero-sublead">Virus Disease (COVID-19)</h2>
                 <p className="hero-p">
                     Pray for the coronavirus victims. This virus was first
                     reported in Wuhan, Hubai, China on November 17th, 2019 & on
