@@ -12,7 +12,7 @@ export default class CovidTable extends Component {
     };
 
     fetchData = () => {
-        axios.get("https://api.covid19api.com/summary").then((res) => {
+        axios.get("//api.covid19api.com/summary").then((res) => {
             this.setState({ data: res.data.Countries });
         });
     };

@@ -22,7 +22,7 @@ class App extends Component {
     };
 
     fetchData = () => {
-        axios.get("https://api.covid19api.com/summary").then((res) => {
+        axios.get("//api.covid19api.com/summary").then((res) => {
             this.setState({
                 chartData: {
                     labels: [
@@ -77,7 +77,7 @@ class App extends Component {
                                     data={chartData}
                                     id="chart"
                                     width={100}
-                                    height={60}
+                                    height={80}
                                     options={{
                                         title: {
                                             display: true,
@@ -85,6 +85,7 @@ class App extends Component {
                                             fontSize: 24,
                                         },
                                         responsive: true,
+                                        maintainAspectRatio: true,
                                     }}
                                 />
                             </div>

@@ -13,7 +13,7 @@ class CovidStatesTable extends Component {
 
     fetchData = () => {
         axios
-            .get("https://covidtracking.com/api/v1/states/current.json")
+            .get("//covidtracking.com/api/v1/states/current.json")
             .then((res) => {
                 console.log(res.data);
                 this.setState({ data: res.data });
