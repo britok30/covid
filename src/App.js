@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import Hero from "./components/Hero/Hero";
-import CovidData from "./components/Data/CovidData";
-import CovidTable from "./components/Data/CovidTable";
-import CovidNews from "./components/News/CovidNews";
-import SearchLocal from "./components/LocalFinder/SearchLocal";
-import CovidStatesTable from "./components/Data/CovidStatesTable";
-import Footer from "./components/Footer";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import React, { Component } from 'react';
+import Hero from './components/Hero/Hero';
+import CovidData from './components/Data/CovidData';
+import CovidTable from './components/Data/CovidTable';
+import CovidNews from './components/News/CovidNews';
+import SearchLocal from './components/LocalFinder/SearchLocal';
+import CovidStatesTable from './components/Data/CovidStatesTable';
+import Footer from './components/Footer';
 
-import axios from "axios";
-import { Pie } from "react-chartjs-2";
-import "./App.css";
+import axios from 'axios';
+import { Pie } from 'react-chartjs-2';
+import './App.css';
 
 class App extends Component {
     state = {
@@ -22,20 +21,20 @@ class App extends Component {
     };
 
     fetchData = () => {
-        axios.get("//api.covid19api.com/summary").then((res) => {
+        axios.get('//api.covid19api.com/summary').then((res) => {
             this.setState({
                 chartData: {
                     labels: [
-                        "New Confirmed",
-                        "Total Confirmed",
-                        "New Deaths",
-                        "Total Deaths",
-                        "New Recovered",
-                        "Total Recovered",
+                        'New Confirmed',
+                        'Total Confirmed',
+                        'New Deaths',
+                        'Total Deaths',
+                        'New Recovered',
+                        'Total Recovered',
                     ],
                     datasets: [
                         {
-                            label: "COVID Data",
+                            label: 'COVID Data',
                             data: [
                                 res.data.Global.NewConfirmed,
                                 res.data.Global.TotalConfirmed,
@@ -45,12 +44,12 @@ class App extends Component {
                                 res.data.Global.TotalRecovered,
                             ],
                             backgroundColor: [
-                                "rgba(0, 161, 171, 0.5)",
-                                "rgba(255, 82, 0, 0.5)",
-                                "rgba(228, 63, 90, 0.5)",
-                                "rgba(22, 129, 122, 0.5)",
-                                "rgba(255, 226, 188, 0.5)",
-                                "rgba(175, 139, 175, 0.5)",
+                                'rgba(0, 161, 171, 0.5)',
+                                'rgba(255, 82, 0, 0.5)',
+                                'rgba(228, 63, 90, 0.5)',
+                                'rgba(22, 129, 122, 0.5)',
+                                'rgba(255, 226, 188, 0.5)',
+                                'rgba(175, 139, 175, 0.5)',
                             ],
                         },
                     ],
@@ -81,7 +80,7 @@ class App extends Component {
                                     options={{
                                         title: {
                                             display: true,
-                                            text: "Quick Facts",
+                                            text: 'Quick Facts',
                                             fontSize: 24,
                                         },
                                         responsive: true,
@@ -94,17 +93,9 @@ class App extends Component {
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-8 col-md-8 col-sm-8 card-columns">
+                        <div className="col-md-12 col-md-12 col-sm-12 card-columns">
                             <h2 className="covid-heading">Top Covid News</h2>
                             <CovidNews />
-                        </div>
-                        <div className="twitter col-md-4 col-lg-4 col-sm-4">
-                            <TwitterTimelineEmbed
-                                sourceType="profile"
-                                screenName="who"
-                                theme="dark"
-                                options={{ height: 600 }}
-                            />
                         </div>
                     </div>
                 </div>

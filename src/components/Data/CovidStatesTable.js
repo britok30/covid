@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import axios from "axios";
-import moment from "moment";
+import React, { Component } from 'react';
+import axios from 'axios';
+import moment from 'moment';
 
 class CovidStatesTable extends Component {
     state = {
@@ -13,7 +13,7 @@ class CovidStatesTable extends Component {
 
     fetchData = () => {
         axios
-            .get("//covidtracking.com/api/v1/states/current.json")
+            .get('//api.covidtracking.com/api/v1/states/current.json')
             .then((res) => {
                 console.log(res.data);
                 this.setState({ data: res.data });
@@ -26,7 +26,7 @@ class CovidStatesTable extends Component {
             <div>
                 <h2 className="covid-heading">U.S. Covid Stats</h2>
                 <div className="moment">
-                    As of: {moment().format("MMMM Do, YYYY")}
+                    As of: {moment().format('MMMM Do, YYYY')}
                 </div>
                 <div className="table-responsive">
                     <table className="table table-borderless table-dark table-hover covidtable ">
@@ -51,7 +51,7 @@ class CovidStatesTable extends Component {
                                             {Number(
                                                 state.positive
                                             ).toLocaleString()}
-                                            {"  "}({"+"}
+                                            {'  '}({'+'}
                                             {Number(
                                                 state.positiveIncrease
                                             ).toLocaleString()}
@@ -61,7 +61,7 @@ class CovidStatesTable extends Component {
                                             {Number(
                                                 state.negative
                                             ).toLocaleString()}
-                                            {"  "}({"+"}
+                                            {'  '}({'+'}
                                             {Number(
                                                 state.negativeIncrease
                                             ).toLocaleString()}
@@ -71,7 +71,7 @@ class CovidStatesTable extends Component {
                                             {Number(
                                                 state.death
                                             ).toLocaleString()}
-                                            {"  "}({"+"}
+                                            {'  '}({'+'}
                                             {Number(
                                                 state.deathIncrease
                                             ).toLocaleString()}
