@@ -65,7 +65,7 @@ class App extends Component {
                 <div className="hero">
                     <Hero />
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row space">
                         <div className="col-md-4 col-lg-4 col-sm-4">
                             <CovidData />
@@ -91,7 +91,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-md-12 col-sm-12 card-columns">
                             <h2 className="covid-heading">Top Covid News</h2>
@@ -99,17 +99,17 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <SearchLocal />
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12">
                             <CovidTable />
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid datamap">
+                <div className="container datamap">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12">
                             <CovidStatesTable />
