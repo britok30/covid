@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import moment from 'moment';
 
-class CovidStatesTable extends Component {
+class CovidAntiTable extends Component {
     state = {
         data: [],
     };
@@ -13,7 +13,7 @@ class CovidStatesTable extends Component {
 
     fetchData = () => {
         axios
-            .get('//api.covidtracking.com/api/v1/states/current.json')
+            .get('https://api.covidtracking.com/api/v2/states/current.json')
             .then((res) => {
                 console.log(res.data);
                 this.setState({ data: res.data });
@@ -88,4 +88,4 @@ class CovidStatesTable extends Component {
     }
 }
 
-export default CovidStatesTable;
+export default CovidAntiTable;

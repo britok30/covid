@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import axios from "axios";
-import CovidGlobalCard from "./CovidGlobalCard";
+import React, { Component } from 'react';
+import axios from 'axios';
+import CovidGlobalCard from './CovidGlobalCard';
 
 class CovidData extends Component {
     state = {
@@ -12,7 +12,7 @@ class CovidData extends Component {
     };
 
     fetchData = () => {
-        axios.get("//api.covid19api.com/summary").then((res) => {
+        axios.get('https://api.covid19api.com/summary').then((res) => {
             console.log(res);
             this.setState({ data: res.data.Global });
         });

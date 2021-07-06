@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Hero from './components/Hero/Hero';
 import CovidData from './components/Data/CovidData';
 import CovidTable from './components/Data/CovidTable';
-import CovidNews from './components/News/CovidNews';
-import SearchLocal from './components/LocalFinder/SearchLocal';
-import CovidStatesTable from './components/Data/CovidStatesTable';
 import Footer from './components/Footer';
 
 import axios from 'axios';
@@ -93,26 +90,8 @@ class App extends Component {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 col-md-12 col-sm-12 card-columns">
-                            <h2 className="covid-heading">Top Covid News</h2>
-                            <CovidNews />
-                        </div>
-                    </div>
-                </div>
-                <div className="container">
-                    <SearchLocal />
-                </div>
-                <div className="container">
-                    <div className="row">
                         <div className="col-md-12 col-lg-12 col-sm-12">
                             <CovidTable />
-                        </div>
-                    </div>
-                </div>
-                <div className="container datamap">
-                    <div className="row">
-                        <div className="col-md-12 col-lg-12 col-sm-12">
-                            <CovidStatesTable />
                         </div>
                     </div>
                 </div>
